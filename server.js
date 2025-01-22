@@ -493,8 +493,8 @@ app.get('/lowest-items', (req, res) => {
 const transporter = nodemailer.createTransport({
   service: 'gmail',  
   auth: {
-    user: 'shop84328@gmail.com',   
-    pass: 'auxk youu pfsf icqb'    
+    user: 'Your Gmail',   
+    pass: 'App password'    
   },
   tls: {
     rejectUnauthorized: false    
@@ -523,7 +523,7 @@ app.post('/send_email_order', (req, res) => {
 
   
   const mailOptions = {
-    from: 'shop84328@gmail.com', 
+    from: 'Your Gmail', 
     to: email,
     subject: 'Order Confirmation',
     text: emailContent
